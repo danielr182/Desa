@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Ejemplo Conversacion
+  host: Ejemplo-Conversacion
+  disk_quota: 1024M
+  services:
+  - Ejemplo Conversacion-natural_language_classifier
+  - Ejemplo Conversacion-dialog
+  command: npm start
